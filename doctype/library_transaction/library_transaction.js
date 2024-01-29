@@ -1,11 +1,7 @@
 // Copyright (c) 2024, naveen and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Library Transaction', {
-	// refresh: function(frm) {
 
-	// }
-});
 frappe.ui.form.on('Library Transaction', {
     issue_date: function(frm) {
         //debugger;
