@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MSH-{YYYY}-{###}",
+ "creation": "2024-01-17 12:29:46.044197",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member_id",
+  "member_name",
+  "membership_start_date",
+  "membership_end_date",
+  "membership_type",
+  "membership_period",
+  "membership_amount",
+  "maximum_number_of_books",
+  "amount_paid",
+  "member_details_section",
+  "email_id",
+  "phone_number",
+  "member_from",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "membership_start_date",
+   "fieldtype": "Date",
+   "label": "Membership Start Date"
+  },
+  {
+   "fieldname": "membership_end_date",
+   "fieldtype": "Date",
+   "label": "Membership End Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "membership_type",
+   "fieldtype": "Select",
+   "label": "Membership Type",
+   "options": "Gold\nSilver\nBronze"
+  },
+  {
+   "fieldname": "membership_period",
+   "fieldtype": "Read Only",
+   "label": "Membership Period"
+  },
+  {
+   "fieldname": "membership_amount",
+   "fieldtype": "Read Only",
+   "label": "Membership Amount"
+  },
+  {
+   "fieldname": "maximum_number_of_books",
+   "fieldtype": "Read Only",
+   "label": "Maximum Number Of Books"
+  },
+  {
+   "default": "0",
+   "fieldname": "amount_paid",
+   "fieldtype": "Check",
+   "label": "Amount Paid"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Membership",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "member_details_section",
+   "fieldtype": "Section Break",
+   "label": "Member Details"
+  },
+  {
+   "fetch_from": "member_id.member_name",
+   "fieldname": "member_name",
+   "fieldtype": "Read Only",
+   "label": "Member Name"
+  },
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "label": "Member ID",
+   "options": "Library Member"
+  },
+  {
+   "fetch_from": "member_id.email_id",
+   "fieldname": "email_id",
+   "fieldtype": "Read Only",
+   "label": "Email ID"
+  },
+  {
+   "fetch_from": "member_id.phone_number",
+   "fieldname": "phone_number",
+   "fieldtype": "Read Only",
+   "label": "Phone Number"
+  },
+  {
+   "fetch_from": "member_id.member_from",
+   "fieldname": "member_from",
+   "fieldtype": "Read Only",
+   "label": "Member From"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-17 17:52:46.522201",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Membership",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

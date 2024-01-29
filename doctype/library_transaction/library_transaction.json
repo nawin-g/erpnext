@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:LIB-TRXN{###}",
+ "creation": "2024-01-17 12:57:00.822014",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "article",
+  "article_name",
+  "member_id",
+  "member_name",
+  "membership_type",
+  "transaction_type",
+  "issue_date",
+  "return_date",
+  "due_date",
+  "fine_amount",
+  "amount_paid",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "article.article_name",
+   "fieldname": "article_name",
+   "fieldtype": "Read Only",
+   "label": "Article Name"
+  },
+  {
+   "fetch_from": "member_id.member_name",
+   "fieldname": "member_name",
+   "fieldtype": "Read Only",
+   "label": "Member Name"
+  },
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "label": "Member ID",
+   "options": "Library Member"
+  },
+  {
+   "fetch_from": "member_id.membership_type",
+   "fieldname": "membership_type",
+   "fieldtype": "Read Only",
+   "label": "Membership Type"
+  },
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Select",
+   "label": "Transaction Type",
+   "options": "Issue\nReturn"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Return Date",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fine_amount",
+   "fieldtype": "Read Only",
+   "label": "Fine Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "amount_paid",
+   "fieldtype": "Check",
+   "label": "Amount Paid"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Transaction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "label": "Article ID",
+   "options": "Article"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-17 19:28:20.613772",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Transaction",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ARTICLE-{###}",
+ "creation": "2024-01-17 12:04:39.134499",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "article_name",
+  "author_name",
+  "description",
+  "genre",
+  "column_break_in7go",
+  "language",
+  "published_year",
+  "published_by",
+  "copies_section",
+  "total_copies",
+  "total_issued_copies",
+  "total_available_copies"
+ ],
+ "fields": [
+  {
+   "fieldname": "article_name",
+   "fieldtype": "Data",
+   "label": "Article Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Select",
+   "label": "Language",
+   "options": "Tamil\nEnglish\nHindi"
+  },
+  {
+   "fieldname": "author_name",
+   "fieldtype": "Data",
+   "label": "Author Name"
+  },
+  {
+   "fieldname": "published_year",
+   "fieldtype": "Int",
+   "label": "Published Year"
+  },
+  {
+   "fieldname": "published_by",
+   "fieldtype": "Data",
+   "label": "Published By"
+  },
+  {
+   "fieldname": "total_copies",
+   "fieldtype": "Int",
+   "label": "Total Copies"
+  },
+  {
+   "fieldname": "total_issued_copies",
+   "fieldtype": "Int",
+   "label": "Total Issued Copies"
+  },
+  {
+   "fieldname": "total_available_copies",
+   "fieldtype": "Int",
+   "label": "Total Available Copies"
+  },
+  {
+   "fieldname": "genre",
+   "fieldtype": "Select",
+   "label": "Genre",
+   "options": "Sci-Fi\nComics\nBiography\nAuto Biography\nHistory"
+  },
+  {
+   "fieldname": "column_break_in7go",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "copies_section",
+   "fieldtype": "Section Break",
+   "label": "Copies"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-17 13:50:26.149857",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Article",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

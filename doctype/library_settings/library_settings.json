@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-17 13:06:32.147227",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "loan_period",
+  "fine_amount",
+  "gold_section_section",
+  "g_max_no_of_books",
+  "g_amount",
+  "g_duration",
+  "silver_section_section",
+  "s_max_no_of_books",
+  "s_amount",
+  "s_duration",
+  "bronze_section_section",
+  "b_max_no_of_books",
+  "b_amount",
+  "b_duration"
+ ],
+ "fields": [
+  {
+   "description": "(In Days)",
+   "fieldname": "loan_period",
+   "fieldtype": "Int",
+   "label": "Loan Period"
+  },
+  {
+   "fieldname": "fine_amount",
+   "fieldtype": "Currency",
+   "label": "Fine Amount"
+  },
+  {
+   "fieldname": "gold_section_section",
+   "fieldtype": "Section Break",
+   "label": "Gold Section"
+  },
+  {
+   "fieldname": "g_max_no_of_books",
+   "fieldtype": "Int",
+   "label": "G Max No Of Books"
+  },
+  {
+   "fieldname": "g_amount",
+   "fieldtype": "Currency",
+   "label": "G Amount"
+  },
+  {
+   "description": "(In Months)",
+   "fieldname": "g_duration",
+   "fieldtype": "Int",
+   "label": "G Duration"
+  },
+  {
+   "fieldname": "silver_section_section",
+   "fieldtype": "Section Break",
+   "label": "Silver Section"
+  },
+  {
+   "fieldname": "s_max_no_of_books",
+   "fieldtype": "Int",
+   "label": "S Max No Of Books"
+  },
+  {
+   "fieldname": "s_amount",
+   "fieldtype": "Currency",
+   "label": "S Amount"
+  },
+  {
+   "description": "(In Months)",
+   "fieldname": "s_duration",
+   "fieldtype": "Int",
+   "label": "S Duration"
+  },
+  {
+   "fieldname": "bronze_section_section",
+   "fieldtype": "Section Break",
+   "label": "Bronze Section"
+  },
+  {
+   "fieldname": "b_max_no_of_books",
+   "fieldtype": "Int",
+   "label": "B Max No Of Books"
+  },
+  {
+   "fieldname": "b_amount",
+   "fieldtype": "Currency",
+   "label": "B Amount"
+  },
+  {
+   "description": "(In Months)",
+   "fieldname": "b_duration",
+   "fieldtype": "Int",
+   "label": "B Duration"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-01-17 17:31:02.895910",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
